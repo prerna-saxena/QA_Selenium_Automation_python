@@ -29,4 +29,4 @@ def main():
 
     finally:
         # Close the browser
-        driver.quit()
+        driver.close()
