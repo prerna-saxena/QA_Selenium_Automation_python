@@ -5,16 +5,16 @@ import time
 
 # Initialize the web driver
 def main():
-    # Path to your WebDriver (e.g., ChromeDriver path)
+    # Path to  WebDriver (e.g., ChromeDriver path)
     driver_path = "path/to/chromedriver"
     driver = webdriver.Chrome(executable_path=driver_path)
 
     try:
-        # Open the desired web page
-        driver.get("https://www.example.com")  # Replace with the URL of the web page
+        
+        driver.get("https://www.lambdatest.com/selenium-playground/table-sort-search-demo") 
 
         # Locate the search box (update the selector to match your target site)
-        search_box = driver.find_element(By.NAME, "New York")  # Example uses 'name="New York"'
+        search_box = driver.find_element(By.NAME, "q")  # Example uses 'name="q"'
 
         # Interact with the search box
         search_box.clear()
@@ -30,4 +30,3 @@ def main():
     finally:
         # Close the browser
         driver.quit()
-
